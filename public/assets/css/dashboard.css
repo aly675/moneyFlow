@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .sidebar {
+    width: 84px;
+    background: white;
+    padding: 5.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: fixed;
+    height: 100vh;
+    border-right: 1px solid #eee;
+  }
+
+  .sidebar-icon a:hover {
+    color: #a6a6a6;
+  }
+
+  .sidebar-icon {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .sidebar-icon a {
+    font-size: 1.3rem;
+    color: #1d1d1d;
+  }
+
+  #active {
+    color: #a6a6a6;
+  }
+
+  .sidebar .profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 4rem;
+    margin-top: -2rem ;
+  }
+
+  .sidebar div:hover {
+    color: #00000085;
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 1rem;
+    margin-left: 84px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .header input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .main-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .card #top {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+  }
+
+  .card p {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  /* ================================================= */
+  /* Data Kosong */
+  /* .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    color: #888;
+  } */
+  /* ================================================= */
+
+  /* Data Terisi */
+  .page .show-data {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .keuntungan-txt p,
+  .kerugian-txt p {
+    font-size: 14px;
+  }
+
+  .keuntungan-txt #top,
+  .kerugian-txt #top{
+    font-size: 16px;
+  }
+
+  .show-money-pemasukan {
+    color: green;
+  }
+
+  .show-money-pengeluaran {
+    color: red;
+  }
+  /* ================================================= */
+
+
+  .page-icon i {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1rem;
+    color: #ddd;
+    font-size: 9.5rem;
+  }
+
+  #first-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #1877f2;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  #first-btn:hover {
+    background-color: #0d5bc0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
+
+  }
+
+  .menu {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu a {
+    gap: 10px;
+  }
+
+  .menu .label {
+    background: white;
+    height: 50px;
+    width: 150px;
+    padding: 16px 16px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+  }
+
+  .menu-item {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  #pemasukan,
+  #pengeluaran {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: black;
+  }
+
+  .pemasukan {
+    background-color: #FFD26B;
+    transition: background 0.3s;
+  }
+
+  .pemasukan:hover {
+    background-color: #FFB200;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
+
+  }
+
+  .pengeluaran {
+    background-color: #7EDF91;
+    transition: background 0.3s;
+  }
+
+  .pengeluaran:hover {
+    background-color: #6AC57D;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
+
+  }

@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .sidebar {
+    width: 84px;
+    background: white;
+    padding: 5.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: fixed;
+    height: 100vh;
+    border-right: 1px solid #eee;
+  }
+
+  .sidebar-icon a:hover {
+    color: #a6a6a6;
+  }
+
+  .sidebar-icon {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .sidebar-icon a {
+    font-size: 1.3rem;
+    color: #1d1d1d;
+  }
+
+  #active {
+    color: #a6a6a6;
+  }
+
+  .sidebar .profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 4rem;
+    margin-top: -2rem;
+  }
+
+  .sidebar div:hover {
+    color: #00000085;
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 1rem;
+    margin-left: 84px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .header #date {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .dropdown-btn span {
+    font-size: 1.1rem;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    min-width: 150px;
+    top: 30px;
+    border-radius: 5px;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .dropdown-content a:hover {
+    background: lightgray;
+  }
+
+
+  .dropdown-container {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .dropdown-header {
+    padding: 15px;
+    background: white;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
+  }
+
+  .dropdown-content {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 12px;
+    width: 90%;
+  }
+
+  .dropdown-content.active {
+    display: grid;
+  }
+
+  .payment-option {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    color: #0095ff;
+  }
+
+  .payment-option.selected {
+    background: #0095ff;
+    color: white;
+    border-color: #0095ff;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="text"]:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+   appearance: none;
+  }
+
+  .category-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .category-btn {
+    padding: 8px 16px;
+    background: #0095ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    outline: none;
+  }
+
+  .category-btn:focus {
+    outline: none;
+  }
+
+  .category-btn.selected {
+    background: #0066cc;
+  }
+
+  .save-btn {
+    padding: 12px 24px;
+    background: #0095ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    float: right;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .save-btn:focus {
+    outline: none;
+  }
